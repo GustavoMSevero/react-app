@@ -12,7 +12,7 @@ export default function ListUsers() {
     }, [])
     
     function getUsers(){
-        axios.get("http://localhost:8888/web/react/react-crud3/php/api.php", {
+        axios.get("php/api.php", {
             params: {
                 option: "get users",
               }
@@ -22,7 +22,7 @@ export default function ListUsers() {
     }
 
     function deleteUser(id) {
-        axios.delete("http://localhost:8888/web/react/react-crud3/php/api.php", {
+        axios.delete("php/api.php", {
             params: {
                 id: id,
                 option: "delete user",
